@@ -44,8 +44,11 @@ public class PawnManager : MonoBehaviour
     public void PawnFinishedMoving()
     {
         pawnCount++;
-
-        Debug.Log("Pawn moved: " + pawnCount + " / " + totalPawns);
+        if (pawnCount >= 16)
+        {
+            pawnCount = 16;
+        }
+        //Debug.Log("Pawn moved: " + pawnCount + " / " + totalPawns);
 
         if (IsUnlocked && detectRotate != null)
         {

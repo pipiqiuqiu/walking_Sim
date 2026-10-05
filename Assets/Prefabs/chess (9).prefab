@@ -168,6 +168,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8854869437848559323}
     m_Modifications:
+    - target: {fileID: 3160935735024639934, guid: 55358cbfdb0e3fe45bca323a390948e8, type: 3}
+      propertyPath: material2
+      value: 
+      objectReference: {fileID: 2100000, guid: 39e99c673f5d2f24295858bbd886381b, type: 2}
     - target: {fileID: 7025997089529942071, guid: 55358cbfdb0e3fe45bca323a390948e8, type: 3}
       propertyPath: m_Name
       value: chess_PawnUI

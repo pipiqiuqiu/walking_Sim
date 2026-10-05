@@ -29,7 +29,7 @@ public class Queen_Rotate : MonoBehaviour
             transform.Rotate(0f, rotateSpeed * Time.deltaTime, 0f, Space.Self);
         }
 
-        float targetY = 4*PawnManager.pawnCount+8;
+        float targetY = 2*PawnManager.pawnCount+8;
         Q.y = Mathf.MoveTowards(Q.y, targetY, moveSpeed * Time.deltaTime);    
         Queen.position = Q;
 
