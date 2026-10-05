@@ -136,6 +136,45 @@ public class PlayerMovement : MonoBehaviour
         return true;
     }
 
+    /// <summary>
+    /// Returns the player to a saved pose and discards any fall or surface anchor
+    /// from before the reset. The surface motor will acquire support at the new pose.
+    /// </summary>
+    public void ResetToPose(Vector3 position, Quaternion rotation)
+    {
+        if (controller == null)
+            controller = GetComponent<CharacterController>();
+        if (playerBody == null)
+            playerBody = GetComponent<Rigidbody>();
+
+        bool controllerWasActive = controller != null && controller.enabled;
+        if (controller != null)
+            controller.enabled = false;
+        if (playerBody != null && !playerBody.isKinematic)
+        {
+            playerBody.linearVelocity = Vector3.zero;
+            playerBody.angularVelocity = Vector3.zero;
+        }
+
+        transform.SetPositionAndRotation(position, rotation);
+        if (playerBody != null)
+        {
+            playerBody.position = position;
+            playerBody.rotation = rotation;
+        }
+
+        velocity = velocityInput = velocityPhysics = Vector3.zero;
+        jumping = isGrounded = wasGroundedLastFrame = false;
+        jumpHeldTimer = jumpPreloadTimer = coyoteTimer = 0f;
+
+        if (surfaceMotor != null)
+            surfaceMotor = CreateSurfaceMotor();
+        else if (controller != null)
+            controller.enabled = controllerWasActive;
+
+        Physics.SyncTransforms();
+    }
+
     void Update()
     {
         if (stickToSurface != (surfaceMotor != null)) {

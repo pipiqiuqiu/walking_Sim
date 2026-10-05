@@ -7,9 +7,9 @@ public sealed class KingTeleportTrigger : MonoBehaviour
 {
     [SerializeField] private KingTeleportTrigger pairedKing;
     [SerializeField] private Collider targetSurface;
-    [Tooltip("Outward face normal in the owning surface's local space.")]
+    [Tooltip("Face normal recorded during setup. Kept for existing scene data.")]
     [SerializeField] private Vector3 localSurfaceNormal = Vector3.up;
-    [Tooltip("The player's foot point on this king's face, in surface-local space.")]
+    [Tooltip("Arrival point recorded during setup. The live king position is used at runtime.")]
     [SerializeField] private Vector3 localArrivalPoint;
     [Tooltip("Minimum time between transfers. The arriving king stays locked until the player leaves its trigger.")]
     [SerializeField, Min(0f)] private float reentryCooldown = 0.5f;
@@ -18,6 +18,10 @@ public sealed class KingTeleportTrigger : MonoBehaviour
 
     private BoxCollider triggerCollider;
     private readonly List<PlayerMovement> releasedPlayers = new List<PlayerMovement>();
+    private static readonly Vector3[] surfaceDirections =
+    {
+        Vector3.right, Vector3.left, Vector3.up, Vector3.down, Vector3.forward, Vector3.back
+    };
 
     private sealed class ArrivalLock
     {
@@ -30,13 +34,25 @@ public sealed class KingTeleportTrigger : MonoBehaviour
         = new Dictionary<PlayerMovement, ArrivalLock>();
 
     public KingTeleportTrigger PairedKing => pairedKing;
-    public Collider TargetSurface => targetSurface;
+    public Collider TargetSurface => SolidTargetSurface;
     public Vector3 LocalSurfaceNormal => localSurfaceNormal;
     public Vector3 LocalArrivalPoint => localArrivalPoint;
-    public Vector3 WorldNormal => targetSurface == null ? transform.up
-        : targetSurface.transform.worldToLocalMatrix.transpose.MultiplyVector(localSurfaceNormal).normalized;
-    public Vector3 WorldArrivalPoint => targetSurface == null ? transform.position
-        : targetSurface.transform.TransformPoint(localArrivalPoint);
+    public Vector3 WorldNormal => TryGetCurrentArrival(out _, out Vector3 normal)
+        ? normal : transform.up;
+    public Vector3 WorldArrivalPoint => TryGetCurrentArrival(out Vector3 point, out _)
+        ? point : transform.position;
+
+    private Collider SolidTargetSurface
+    {
+        get
+        {
+            if (targetSurface == null || !targetSurface.isTrigger) return targetSurface;
+            // The glass room's kings reference its interaction trigger. The
+            // solid mesh on that same block is the actual walkable surface.
+            MeshCollider mesh = targetSurface.GetComponent<MeshCollider>();
+            return mesh != null && !mesh.isTrigger ? mesh : null;
+        }
+    }
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
     private static void ResetTransfers()
@@ -66,7 +82,7 @@ public sealed class KingTeleportTrigger : MonoBehaviour
     {
         if (!isActiveAndEnabled || other == null || pairedKing == null || pairedKing == this
             || !pairedKing.isActiveAndEnabled || pairedKing.pairedKing != this
-            || targetSurface == null || pairedKing.targetSurface != targetSurface)
+            || TargetSurface == null || pairedKing.TargetSurface != TargetSurface)
             return false;
         PlayerMovement player = other.GetComponentInParent<PlayerMovement>();
         if (player == null || !player.isActiveAndEnabled || !HasPlayerTag(other.transform))
@@ -76,7 +92,8 @@ public sealed class KingTeleportTrigger : MonoBehaviour
                 || (!previous.hasLeft && previous.destination == this)))
             return false;
 
-        Vector3 normal = pairedKing.WorldNormal;
+        if (!pairedKing.TryGetCurrentArrival(out Vector3 footPoint, out Vector3 normal))
+            return false;
         Vector3 forward = Quaternion.FromToRotation(player.transform.up, normal) * player.transform.forward;
         ArrivalLock transfer = new ArrivalLock
         {
@@ -87,17 +104,59 @@ public sealed class KingTeleportTrigger : MonoBehaviour
         // Reserve before changing the pose so multiple colliders cannot send
         // the same player back during the same physics step.
         arrivalLocks[player] = transfer;
-        if (pairedKing.TryPlacePlayer(player, normal, forward))
+        if (pairedKing.TryPlacePlayer(player, footPoint, normal, forward))
             return true;
         if (previous == null) arrivalLocks.Remove(player);
         else arrivalLocks[player] = previous;
         return false;
     }
 
-    private bool TryPlacePlayer(PlayerMovement player, Vector3 normal, Vector3 forward)
+    private bool TryGetCurrentArrival(out Vector3 footPoint, out Vector3 normal)
     {
-        Vector3 footPoint = WorldArrivalPoint;
-        if (player.TeleportToSurface(targetSurface, footPoint, normal, forward)) return true;
+        footPoint = default;
+        normal = default;
+        Collider surface = SolidTargetSurface;
+        if (surface == null || !surface.enabled || !surface.gameObject.activeInHierarchy)
+            return false;
+
+        if (triggerCollider == null) triggerCollider = GetComponent<BoxCollider>();
+        if (triggerCollider == null || !triggerCollider.enabled)
+            return false;
+
+        Physics.SyncTransforms();
+        Vector3 marker = triggerCollider.transform.TransformPoint(triggerCollider.center);
+        float reach = Mathf.Max(1f, triggerCollider.bounds.extents.magnitude + 0.25f);
+        float bestDistance = float.PositiveInfinity;
+        Vector3 bestPoint = default;
+        Vector3 bestNormal = default;
+        TryFace(transform.up);
+        Transform surfaceTransform = surface.transform;
+        foreach (Vector3 direction in surfaceDirections)
+            TryFace(surfaceTransform.TransformDirection(direction));
+        footPoint = bestPoint;
+        normal = bestNormal;
+        return bestDistance < float.PositiveInfinity;
+
+        void TryFace(Vector3 direction)
+        {
+            if (!surface.Raycast(new Ray(marker + direction * reach, -direction),
+                    out RaycastHit hit, reach * 2f)
+                || Vector3.Dot(hit.normal, direction) < 0.99f)
+                return;
+
+            float distance = (hit.point - marker).sqrMagnitude;
+            if (distance >= bestDistance || distance > reach * reach) return;
+            bestDistance = distance;
+            bestPoint = hit.point;
+            bestNormal = hit.normal;
+        }
+    }
+
+    private bool TryPlacePlayer(PlayerMovement player, Vector3 footPoint, Vector3 normal, Vector3 forward)
+    {
+        Collider surface = SolidTargetSurface;
+        if (surface == null) return false;
+        if (player.TeleportToSurface(surface, footPoint, normal, forward)) return true;
         if (arrivalSearchRadius <= 0f || normal.sqrMagnitude < 0.0001f) return false;
         Vector3 tangent = Vector3.ProjectOnPlane(transform.forward, normal).normalized;
         if (tangent.sqrMagnitude < 0.0001f)
@@ -110,7 +169,11 @@ public sealed class KingTeleportTrigger : MonoBehaviour
             {
                 float angle = sample * Mathf.PI * 0.25f;
                 Vector3 offset = (tangent * Mathf.Cos(angle) + across * Mathf.Sin(angle)) * radius;
-                if (player.TeleportToSurface(targetSurface, footPoint + offset, normal, forward)) return true;
+                Vector3 candidate = footPoint + offset;
+                if (surface.Raycast(new Ray(candidate + normal * 0.05f, -normal),
+                        out RaycastHit hit, 0.1f)
+                    && Vector3.Dot(hit.normal, normal) >= 0.99f
+                    && player.TeleportToSurface(surface, hit.point, normal, forward)) return true;
             }
         }
         return false;

@@ -24,6 +24,8 @@ public class BlockMoveTrigger : MonoBehaviour
     private Vector3 movementUnitScale = Vector3.one;
     private MovementState movement;
     private bool isTriggered = false;
+    private PlayerCameraControl playerCameraControl;
+    private bool isCameraShaking;
 
     private sealed class MovementState
     {
@@ -52,14 +54,23 @@ public class BlockMoveTrigger : MonoBehaviour
 
     void Update()
     {
-            if (pawnManager == null)
-                return;
+        bool shouldMove = pawnManager != null && pawnManager.IsUnlocked
+            && isTriggered && BindTarget() && Mathf.Abs(moveDistance) >= 0.000001f
+            && Mathf.Abs(moveSpeed) >= 0.000001f;
+        if (shouldMove)
+            MoveObject(Time.deltaTime, Time.frameCount);
 
-            if (pawnManager.IsUnlocked && BindTarget() && isTriggered)
-            {
-                MoveObject(Time.deltaTime, Time.frameCount);
-            }
-            
+        SetCameraShake(shouldMove);
+    }
+
+    private void SetCameraShake(bool active)
+    {
+        if (!active && !isCameraShaking)
+            return;
+
+        isCameraShaking = active;
+        if (playerCameraControl != null)
+            playerCameraControl.SetBlockMovementShake(this, active);
     }
 
     bool BindTarget()
@@ -136,6 +147,7 @@ public class BlockMoveTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isTriggered = true;
+            playerCameraControl = other.GetComponentInParent<PlayerCameraControl>();
         }
     }
 
@@ -144,6 +156,13 @@ public class BlockMoveTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isTriggered = false;
+            SetCameraShake(false);
+            playerCameraControl = null;
         }
+    }
+
+    private void OnDisable()
+    {
+        SetCameraShake(false);
     }
 }

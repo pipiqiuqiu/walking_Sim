@@ -17,6 +17,10 @@ public class ChangeMaterial : MonoBehaviour
 
     void Update()
     {
+        if (pawnManager == null)
+        {
+            return;
+        }
         if (pawnManager.pawnCount >= 8)
         {
             objectRenderer.material = material2;

@@ -64,10 +64,7 @@ public class BlueCubeConnector : MonoBehaviour
             }
 
 
-            // =========================
-            // 第一次点击
-            // =========================
-
+      
             if (firstCube == null)
             {
                 firstCube = hit.transform;
@@ -81,10 +78,7 @@ public class BlueCubeConnector : MonoBehaviour
             }
 
 
-            // =========================
-            // 第二次点击
-            // =========================
-
+         
             Transform secondCube =
                 hit.transform;
 
@@ -104,19 +98,19 @@ public class BlueCubeConnector : MonoBehaviour
             );
 
 
-            // 创建连接
+         
             CreateConnector(
                 firstCube.position,
                 secondCube.position
             );
 
 
-            // 清空，等待下一组
+            
             firstCube = null;
         }
         else
         {
-            Debug.Log("Nothing hit.");
+            //Debug.Log("Nothing hit.");
         }
     }
 

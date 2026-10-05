@@ -1651,6 +1651,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: King Black
       objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2433,6 +2437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: King Black
       objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2936,6 +2944,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 473917931}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -3154,6 +3166,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: King (1) Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3293,6 +3309,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1690264061}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -3452,12 +3472,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 2047481414}
     m_Modifications:
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.42314884
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.876
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.993
+      value: -1.002
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5090,12 +5114,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 958201326}
     m_Modifications:
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.23793156
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.8047936
+      value: -0.8048
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.967
+      value: 0.9735
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5499,6 +5527,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: King Black
       objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5611,7 +5643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5663149331275112677, guid: 62093152163a72d4289ff6b57bbcb221, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.06125003
+      value: 0.0641
       objectReference: {fileID: 0}
     - target: {fileID: 5663149331275112677, guid: 62093152163a72d4289ff6b57bbcb221, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5730,6 +5762,10 @@ PrefabInstance:
     - target: {fileID: 2918149543738170019, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
       propertyPath: m_Name
       value: King Black
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6105,6 +6141,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1604614238}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -6742,6 +6782,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1964071704}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -6900,6 +6944,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1683427399}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -7623,6 +7671,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1696938106}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -7893,6 +7945,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1961235559}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -9230,6 +9286,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: King Black
       objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9328,6 +9388,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1850944574}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -9827,6 +9891,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1318059044}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -10473,6 +10541,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 737836356}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -10743,6 +10815,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2047481414}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -12455,6 +12531,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: King Black
       objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12857,7 +12937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5663149331275112677, guid: 62093152163a72d4289ff6b57bbcb221, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.06125003
+      value: 0.063
       objectReference: {fileID: 0}
     - target: {fileID: 5663149331275112677, guid: 62093152163a72d4289ff6b57bbcb221, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12976,6 +13056,10 @@ PrefabInstance:
     - target: {fileID: 2918149543738170019, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
       propertyPath: m_Name
       value: King Black
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13246,6 +13330,10 @@ PrefabInstance:
     - target: {fileID: 2918149543738170019, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
       propertyPath: m_Name
       value: King Black
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14837,7 +14925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5663149331275112677, guid: 62093152163a72d4289ff6b57bbcb221, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.05625002
+      value: 0.0632
       objectReference: {fileID: 0}
     - target: {fileID: 5663149331275112677, guid: 62093152163a72d4289ff6b57bbcb221, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14956,6 +15044,10 @@ PrefabInstance:
     - target: {fileID: 2918149543738170019, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
       propertyPath: m_Name
       value: King Black
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16076,6 +16168,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1173845734}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -16861,6 +16957,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1451808830}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -17455,6 +17555,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: King Black
       objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17979,6 +18083,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: King Black
       objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18399,6 +18507,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: King Black
       objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18692,6 +18804,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: King Black
       objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18790,6 +18906,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1546602140}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -19521,12 +19641,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 958201326}
     m_Modifications:
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.422468
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.786
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: -1.002
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19847,6 +19971,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1468068757}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -20064,6 +20192,10 @@ PrefabInstance:
     - target: {fileID: 2918149543738170019, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
       propertyPath: m_Name
       value: King Black
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21985,6 +22117,7 @@ GameObject:
   - component: {fileID: 1301303226}
   - component: {fileID: 1301303225}
   - component: {fileID: 1301303224}
+  - component: {fileID: 1301303228}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -22007,9 +22140,9 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -22085,6 +22218,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1301303228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301303223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc3a32874ac36c4f999b2d3ab73d362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerResetDistance
+  player: {fileID: 1568726274}
 --- !u!1 &1305534370
 GameObject:
   m_ObjectHideFlags: 0
@@ -22229,16 +22375,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 2047481414}
     m_Modifications:
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3745012
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.876
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.96680003
+      value: 0.968
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.7818076
+      value: 0.782
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalRotation.w
@@ -22852,6 +23002,10 @@ PrefabInstance:
     - target: {fileID: 2918149543738170019, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
       propertyPath: m_Name
       value: King Black
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23514,6 +23668,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 319716534}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King (1)
@@ -24116,6 +24274,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 382126693}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King
@@ -24596,6 +24758,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: King Black
       objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24694,6 +24860,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 194750890}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -25081,6 +25251,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 700381209}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King
@@ -25909,12 +26083,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1546602140}
     m_Modifications:
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.26039836
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.7972014
+      value: 0.7972
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.969
+      value: 0.9742
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26656,6 +26834,10 @@ PrefabInstance:
     - target: {fileID: 2918149543738170019, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
       propertyPath: m_Name
       value: King Black
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27588,6 +27770,10 @@ PrefabInstance:
       propertyPath: initialSurfaceSearchDistance
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 785873971517624810, guid: 96f8fb04377ad4bc5a3e99c652bebef1, type: 3}
+      propertyPath: blockShakeAmplitude
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1821278238164118434, guid: 96f8fb04377ad4bc5a3e99c652bebef1, type: 3}
       propertyPath: m_Name
       value: FirstPersonController
@@ -27626,7 +27812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9064379890283265927, guid: 96f8fb04377ad4bc5a3e99c652bebef1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 116.3
+      value: 145.28
       objectReference: {fileID: 0}
     - target: {fileID: 9064379890283265927, guid: 96f8fb04377ad4bc5a3e99c652bebef1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -27638,19 +27824,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9064379890283265927, guid: 96f8fb04377ad4bc5a3e99c652bebef1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 9064379890283265927, guid: 96f8fb04377ad4bc5a3e99c652bebef1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9064379890283265927, guid: 96f8fb04377ad4bc5a3e99c652bebef1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 9064379890283265927, guid: 96f8fb04377ad4bc5a3e99c652bebef1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9064379890283265927, guid: 96f8fb04377ad4bc5a3e99c652bebef1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -27658,7 +27844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9064379890283265927, guid: 96f8fb04377ad4bc5a3e99c652bebef1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 9064379890283265927, guid: 96f8fb04377ad4bc5a3e99c652bebef1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -27675,6 +27861,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1821278238164118434, guid: 96f8fb04377ad4bc5a3e99c652bebef1, type: 3}
       insertIndex: 4
       addedObject: {fileID: 1568726273}
+    - targetCorrespondingSourceObject: {fileID: 1821278238164118434, guid: 96f8fb04377ad4bc5a3e99c652bebef1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1568726281}
   m_SourcePrefab: {fileID: 100100000, guid: 96f8fb04377ad4bc5a3e99c652bebef1, type: 3}
 --- !u!1 &1568726272 stripped
 GameObject:
@@ -27713,6 +27902,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9064379890283265927, guid: 96f8fb04377ad4bc5a3e99c652bebef1, type: 3}
   m_PrefabInstance: {fileID: 1568726271}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1568726281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568726272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 428651e6d7d743042b44a74835752e8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  pressTimeWindow: 1
+  requiredPresses: 4
+  cooldown: 2
+  jumpHeight: 10
+  forwardDistance: 1
+  gravity: 20
+  maxFallSpeed: 30
+  maxUnstuckTime: 5
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 0
+  groundCheckDistance: 0.5
 --- !u!1001 &1575156306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27722,12 +27935,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1546602140}
     m_Modifications:
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.37752837
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.805
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.993
+      value: -1.0026
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.z
@@ -28038,6 +28255,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 717642971}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -28850,61 +29071,69 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 958201326}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
       objectReference: {fileID: 0}
     - target: {fileID: 8048598086498388494, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8048598086498388494, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8048598086498388494, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8048598086498388494, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.24559356
+      value: 0.7739999
       objectReference: {fileID: 0}
     - target: {fileID: 8048598086498388494, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0065945
+      value: 0.86199987
       objectReference: {fileID: 0}
     - target: {fileID: 8048598086498388494, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.8835396
+      value: -3.118
       objectReference: {fileID: 0}
     - target: {fileID: 8048598086498388494, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.023488076
+      value: -0.016608296
       objectReference: {fileID: 0}
     - target: {fileID: 8048598086498388494, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.01660834
       objectReference: {fileID: 0}
     - target: {fileID: 8048598086498388494, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.99972415
+      value: 0.70691144
       objectReference: {fileID: 0}
     - target: {fileID: 8048598086498388494, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.706912
       objectReference: {fileID: 0}
     - target: {fileID: 8048598086498388494, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 8048598086498388494, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -180
       objectReference: {fileID: 0}
     - target: {fileID: 8048598086498388494, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -2.6920166
+      objectReference: {fileID: 0}
+    - target: {fileID: 8048598086498388494, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29287,6 +29516,10 @@ PrefabInstance:
     - target: {fileID: 2918149543738170019, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
       propertyPath: m_Name
       value: King Black
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29968,6 +30201,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 556029344}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -32495,6 +32732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: King Black
       objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32733,6 +32974,10 @@ PrefabInstance:
       value: 1.6009998
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4462782
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalScale.z
       value: 1.6009998
       objectReference: {fileID: 0}
@@ -32742,7 +32987,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0022
+      value: -1.002
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32820,7 +33065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5663149331275112677, guid: 62093152163a72d4289ff6b57bbcb221, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.06125003
+      value: 0.0629
       objectReference: {fileID: 0}
     - target: {fileID: 5663149331275112677, guid: 62093152163a72d4289ff6b57bbcb221, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32992,6 +33237,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1644758088}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -33799,6 +34048,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1957225629}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -34914,6 +35167,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: King Black
       objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35967,6 +36224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: King Black
       objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36140,6 +36401,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1254055206}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -36497,6 +36762,10 @@ PrefabInstance:
     - target: {fileID: 2918149543738170019, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
       propertyPath: m_Name
       value: King Black
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37306,6 +37575,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: King Black
       objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37911,6 +38184,10 @@ PrefabInstance:
     - target: {fileID: 2918149543738170019, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
       propertyPath: m_Name
       value: King Black
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39235,6 +39512,10 @@ PrefabInstance:
       value: 1.6009997
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.30114982
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalScale.z
       value: 1.6009997
       objectReference: {fileID: 0}
@@ -39244,11 +39525,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.965
+      value: 0.967
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.77380735
+      value: 0.774
       objectReference: {fileID: 0}
     - target: {fileID: 5032409819292739816, guid: 0442ccc75b230b042b67ab52ad73fe34, type: 3}
       propertyPath: m_LocalRotation.w
@@ -39738,6 +40019,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 328398030}
     m_Modifications:
+    - target: {fileID: 1049104032695445829, guid: 02f0b7e476a758142afed63523be7112, type: 3}
+      propertyPath: m_Name
+      value: KUI
+      objectReference: {fileID: 0}
     - target: {fileID: 7276002788194144436, guid: 02f0b7e476a758142afed63523be7112, type: 3}
       propertyPath: m_Name
       value: King White
@@ -40089,6 +40374,10 @@ PrefabInstance:
       propertyPath: moveDistance
       value: 0.24
       objectReference: {fileID: 0}
+    - target: {fileID: 4309062632476320727, guid: 486680dac282ea042804a408d9cf45a6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.02
+      objectReference: {fileID: 0}
     - target: {fileID: 4808099528660049296, guid: 486680dac282ea042804a408d9cf45a6, type: 3}
       propertyPath: m_Name
       value: PawnManager
@@ -40383,6 +40672,10 @@ PrefabInstance:
     - target: {fileID: 2918149543738170019, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
       propertyPath: m_Name
       value: King (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758614856185602898, guid: 2725fdf7c02b49d49b990fe3655dfd87, type: 3}
+      propertyPath: m_Name
+      value: KUI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

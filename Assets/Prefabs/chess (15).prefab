@@ -172,6 +172,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chess_PawnUI
       objectReference: {fileID: 0}
+    - target: {fileID: 7114209386404330453, guid: 55358cbfdb0e3fe45bca323a390948e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.029
+      objectReference: {fileID: 0}
     - target: {fileID: 7695116347548371597, guid: 55358cbfdb0e3fe45bca323a390948e8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.0517
